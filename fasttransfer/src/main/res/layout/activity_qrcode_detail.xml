@@ -52,6 +52,7 @@
         <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="302dp"
+                app:cardCornerRadius="20dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="45dp"
                 android:layout_marginEnd="45dp" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="8dp"
@@ -63,9 +64,7 @@
 
                 <TextView
                         android:textSize="17.6sp"
-
                         android:textColor="#003d79"
-
                         android:lineSpacingExtra="2.4sp"
                         android:fontFamily="@font/myriadpro_light"
                         android:text="Apakah Anda ingin melakukan
