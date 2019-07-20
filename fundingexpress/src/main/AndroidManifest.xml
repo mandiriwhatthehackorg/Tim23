@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mandiriexel.fundingexpress">
+
+    <application>
+        <activity android:name=".ui.rincian.RincianActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="fundingrincian"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.report.ReportActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="fundingreport"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.details.DetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="fundingdetail"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.menu.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="fundingmenu"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

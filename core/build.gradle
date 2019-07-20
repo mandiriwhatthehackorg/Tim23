@@ -1,0 +1,29 @@
+apply from: "$rootDir/common.gradle"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation deps.junit
+    androidTestImplementation deps.runner
+    androidTestImplementation deps.espresso
+
+    implementation deps.kotlin.stdlib
+
+    //http
+    implementation deps.retrofit.runtime
+    implementation deps.retrofit.gson
+    implementation deps.retrofit.adapter_rxjava2
+    implementation deps.okhttp.okhttp3
+    implementation deps.okhttp.okhttp3_logging_interceptor
+    //api deps.rxjava2
+    //api deps.rx_android
+
+    //coroutines
+    implementation deps.coroutines.android
+    implementation deps.coroutines.adapter
+    //Dagger2
+    implementation deps.dagger2.runtime
+    kapt deps.dagger2.compiler
+    //Other
+    implementation deps.multidex
+}

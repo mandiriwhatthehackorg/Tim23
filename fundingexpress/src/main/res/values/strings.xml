@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">fundingexpress</string>
+    <array name="tenor">
+        <item>12 Bulan</item>
+        <item>6 Bulan</item>
+        <item>3 Bulan</item>
+    </array>
+</resources>

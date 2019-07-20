@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mandiriexel.fasttransfer">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application>
+        <activity android:name=".ui.qrcodesucces.QrcodeSuccesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="qrcodesucces"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.qrcodescan.QrcodeScanActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="qrcodescan"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.qrcodepassword.QrcodePasswordActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="qrcodepassword"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.qrcodedetail.QrcodeDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="qrcodedetail"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.oneclicksucces.OneClickSuccesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="oneclicksucces"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.oneclickrequest.OneClickRequestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="oneclickrequest"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.oneclickdetail.OneClickDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"     />
+                <data
+                        android:host="transferfast.send"
+                        android:scheme="mandiri" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,1 @@
+include ':app', ':offlinetransaction', ':core', ':fasttransfer', ':fundingexpress'
