@@ -43,21 +43,18 @@ class DetailActivity : AppCompatActivity() {
         uiList.setAdapter(adapter);
     }
     fun cepat(){
-        var add:Detail = Detail("Paket 1 - Dana Cepat","5000000","450000")
-        data.add(add)
-        data.add(add)
-        data.add(add)
+        data.add(Detail("Paket 1 - Dana Cepat","5000000","450000"))
+        data.add(Detail("Paket 2 - Dana Cepat","7000000","550000"))
+        data.add(Detail("Paket 3 - Dana Cepat","9000000","650000"))
     }
     fun pendidikan(){
-        var add:Detail = Detail("Paket 1 - Dana Pendidikan","6000000","450000")
-        data.add(add)
-        data.add(add)
-        data.add(add)
+        data.add(Detail("Paket 1 - Dana Pendidikan","6000000","450000"))
+        data.add(Detail("Paket 2 - Dana Pendidikan","6000000","650000"))
+        data.add(Detail("Paket 3 - Dana Pendidikan","6000000","750000"))
     }
     fun usaha(){
-        var add:Detail = Detail("Paket 1 - Dana Usaha","8000000","450000")
-        data.add(add)
-        data.add(add)
-        data.add(add)
+        data.add(Detail("Paket 1 - Dana Usaha","8000000","450000"))
+        data.add(Detail("Paket 2 - Dana Usaha","10000000","800000"))
+        data.add(Detail("Paket 3 - Dana Usaha","15000000","1000000"))
     }
 }
