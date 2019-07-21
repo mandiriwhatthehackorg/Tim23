@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         })
         uiClick.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
-                val uri = Uri.parse("mandiri://main")
+                val uri = Uri.parse("mandiri://oneclickrequest")
                 val intent = Intent(Intent.ACTION_VIEW, uri)
                 startActivity(intent)
             }
@@ -42,9 +42,16 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         })
+        uiQrcode.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
+                val uri = Uri.parse("mandiri://qrcodescan")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+            }
+        })
     }
     fun currencyFormat(amount: String): String {
-        val formatter = DecimalFormat("###,###,##0.00")
+        val formatter = DecimalFormat("###,###,###")
         return formatter.format(java.lang.Double.parseDouble(amount)).toString()
     }
     override fun onBackPressed() {

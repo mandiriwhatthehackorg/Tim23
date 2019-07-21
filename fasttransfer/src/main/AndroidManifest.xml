@@ -76,7 +76,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE"     />
                 <data
-                        android:host="transferfast.send"
+                        android:host="oneclick"
                         android:scheme="mandiri" />
             </intent-filter>
         </activity>

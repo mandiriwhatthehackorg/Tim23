@@ -50,15 +50,15 @@
                     android:id="@+id/uiTitle"/>
         </LinearLayout>
         <ImageView
-                android:layout_width="232dp"
-                android:layout_height="232dp" app:srcCompat="@drawable/ic_qrcode"
+                android:layout_width="0dp"
+                android:layout_height="232dp" android:src="@drawable/ic_qrcodes"
                 android:id="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" android:layout_marginTop="50dp"/>
         <ImageView
                 android:layout_width="72dp"
-                android:layout_height="72dp" app:srcCompat="@drawable/ic_flash"
+                android:layout_height="72dp" android:src="@drawable/ic_flash"
                 android:id="@+id/btnNext" app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="58dp" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="8dp"
